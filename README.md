@@ -2,7 +2,7 @@
 
 https://herolo-messenger.herokuapp.com/
 
-You can log-in to any of the users:
+You can login to any of the users:
 
 userId: 1
 password: 1
