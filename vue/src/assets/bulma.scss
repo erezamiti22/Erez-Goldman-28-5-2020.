@@ -1,0 +1,37 @@
+// Import Bulma's core
+@import "~bulma/sass/utilities/_all";
+
+// Set your colors
+$primary: #6f42c1;
+$primary-invert: findColorInvert($primary);
+$indigo: #6610f2;
+$indigo-invert: findColorInvert($indigo);
+$text: #13123C;
+$purple: #6f42c1;
+$purple-invert: findColorInvert(#6f42c1);
+$family-sans-serif: "Open Sans", sans-serif;
+
+
+// Setup $colors to use as bulma classes (e.g. 'is-indigo')
+$colors: (
+        "white": ($white, $black),
+        "black": ($black, $white),
+        "light": ($light, $light-invert),
+        "dark": ($dark, $dark-invert),
+        "primary": ($primary, $primary-invert),
+        "info": ($info, $info-invert),
+        "success": ($success, $success-invert),
+        "warning": ($warning, $warning-invert),
+        "danger": ($danger, $danger-invert),
+        "indigo": ($indigo, $indigo-invert),
+        "purple": ($purple, $purple-invert)
+);
+
+// Links
+$link: $primary;
+$link-invert: $primary-invert;
+$link-focus-border: $primary;
+
+// Import Bulma and Buefy styles
+@import "~bulma";
+@import "~buefy/src/scss/buefy";
